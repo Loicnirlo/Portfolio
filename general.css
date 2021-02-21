@@ -170,9 +170,8 @@ hr {
 
 /**************************************************/
 .bg-active-page1{
-  /*background: url("images/bg2.png") center;
-  background-size: cover;*/
-  background-color: grey;
+  background: url("images/bg2.png") center;
+  background-size: cover;
 }
 .bg-active-page2{
   background-color: purple;
