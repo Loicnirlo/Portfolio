@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1vh;
+  grid-auto-flow: dense;
+  height: 100%;
+  width: 100%;
+  padding: 1vh;
+}
+.mini-box {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+.mini-box:first-child {
+  grid-column-start: span 1;
+  grid-row-start: span 2;
+}
+.mini-box:nth-child(2n+3) {
+  grid-row-start: span 2;
+}
+.mini-box:nth-child(5n+7) {
+  grid-column-start: span 2;
+}
