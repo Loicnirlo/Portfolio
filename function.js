@@ -66,6 +66,11 @@ function verif_bg(){
       document.body.classList.remove("bg-active-page4");
       document.body.classList.remove("bg-active-page5");
       document.body.classList.remove("bg-active-page1");
+      document.getElementById("card_one").classList.replace("hidden-card1","reveal-card1");
+      document.getElementById("card_two").classList.replace("hidden-card2","reveal-card2");
+      document.getElementById("card_three").classList.replace("hidden-card3","reveal-card3");
+      document.getElementById("card_four").classList.replace("hidden-card4","reveal-card4");
+      document.getElementById("ld-page").classList.replace("visible","hidden");
     break;
     case 3:
       document.body.classList.remove("bg-active-page2");
