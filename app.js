@@ -18,7 +18,10 @@ window.onload = init;
 function init(){
   x=0;
   verif_bg();
-  verif_visibilityButton();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
+  ButtonDebug();
 }
 
 /***************************************************************/
@@ -59,7 +62,11 @@ function down(){
   x++;
   document.getElementById("box").scrollBy(0, height_box);
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 
 /***************************************************************/
@@ -69,7 +76,11 @@ function up(){
   x--;
   document.getElementById("box").scrollBy(0, -height_box);
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 
 function cursorColor(){

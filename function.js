@@ -2,6 +2,7 @@
 /* Clicks listener */
 
 document.getElementById("ld-page").addEventListener("click", go_ld_page);
+document.getElementById("lolo").addEventListener("click", go_ld_page);
 document.getElementById("acceuil").addEventListener("click", go_acceuil);
 document.getElementById("cv").addEventListener("click", go_cv);
 document.getElementById("rea").addEventListener("click", go_rea);
@@ -14,31 +15,51 @@ function go_ld_page() {
   document.getElementById("bal-page1").scrollIntoView();
   x = 0;
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 function go_acceuil() {
   document.getElementById("bal-page2").scrollIntoView();
   x = 1;
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 function go_cv() {
   document.getElementById("bal-page3").scrollIntoView();
   x = 2;
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 function go_rea() {
   document.getElementById("bal-page4").scrollIntoView();
   x = 3;
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 function go_contact() {
   document.getElementById("bal-page5").scrollIntoView();
   x = 4;
   verif_bg();
+  verifNavbar();
+  setPagecv();
+  setPagerea();
   ButtonDebug();
+  setBox();
 }
 
 /***************************************************************/
@@ -66,11 +87,6 @@ function verif_bg(){
       document.body.classList.remove("bg-active-page4");
       document.body.classList.remove("bg-active-page5");
       document.body.classList.remove("bg-active-page1");
-      document.getElementById("card_one").classList.replace("hidden-card1","reveal-card1");
-      document.getElementById("card_two").classList.replace("hidden-card2","reveal-card2");
-      document.getElementById("card_three").classList.replace("hidden-card3","reveal-card3");
-      document.getElementById("card_four").classList.replace("hidden-card4","reveal-card4");
-      document.getElementById("ld-page").classList.replace("visible","hidden");
     break;
     case 3:
       document.body.classList.remove("bg-active-page2");
@@ -85,6 +101,109 @@ function verif_bg(){
       document.body.classList.remove("bg-active-page4");
       document.body.classList.add("bg-active-page5");
       document.body.classList.remove("bg-active-page1");
+    break;
+  }
+}
+/***************************************************************/
+/* Gere affichage éléments de la page réalisations*/
+
+function setPagerea(){
+    if(x == 3){
+      var z = document.getElementsByClassName("mini-box");
+      for (i = 0; i < z.length; i++) {
+        z[i].style.visibility="visible";
+        z[i].classList.replace("hidden-grid","reveal-grid");
+      }
+      document.getElementById("box").style.visibility="hidden";
+    }else{
+      var z = document.getElementsByClassName("mini-box");
+      for (i = 0; i < z.length; i++) {
+        z[i].style.visibility="hidden";
+        z[i].classList.replace("reveal-grid","hidden-grid");
+    }
+    document.getElementById("box").style.visibility="visible";
+  }
+}
+
+/***************************************************************/
+/* Gere affichage éléments de la page contact*/
+
+
+
+/***************************************************************/
+
+function setBox(){
+  if (x == 0 || x == 1){
+    document.getElementById("box").style.visibility="visible";
+    document.getElementById("hr").style.visibility="visible";
+  }else{
+    document.getElementById("box").style.visibility="hidden";
+    document.getElementById("hr").style.visibility="hidden";
+  }
+}
+
+/***************************************************************/
+/* Gere affichage éléments de la page CV */
+
+function setPagecv(){
+  if(x == 2){
+    document.getElementById("box").style.visibility="hidden";
+    document.getElementById("card_one").classList.replace("hidden-card1","reveal-card1");
+    document.getElementById("card_two").classList.replace("hidden-card2","reveal-card2");
+    document.getElementById("card_three").classList.replace("hidden-card3","reveal-card3");
+    document.getElementById("card_four").classList.replace("hidden-card4","reveal-card4");
+    document.getElementById("lolo").classList.replace("hidden-card4","reveal-card4");
+    document.getElementById("pdp").classList.replace("hidden-card4","reveal-card4");
+  }else{
+    document.getElementById("box").style.visibility="visible";
+    document.getElementById("card_one").classList.replace("reveal-card1","hidden-card1");
+    document.getElementById("card_two").classList.replace("reveal-card2","hidden-card2");
+    document.getElementById("card_three").classList.replace("reveal-card3","hidden-card3");
+    document.getElementById("card_four").classList.replace("reveal-card4","hidden-card4");
+    document.getElementById("lolo").classList.replace("reveal-card4","hidden-card4");
+    document.getElementById("pdp").classList.replace("reveal-card4","hidden-card4");
+  }
+}
+
+/***************************************************************/
+/* Gerer affichage éléments navbar */
+
+function verifNavbar(){
+  switch(x){
+    case 0:
+    var y = document.getElementsByClassName("nav-li");
+      for (i = 0; i < y.length; i++) {
+        y[i].style.visibility="visible";
+      }
+      document.getElementById("ld-page").style.visibility="visible";
+    break;
+    case 1:
+    var y = document.getElementsByClassName("nav-li");
+      for (i = 0; i < y.length; i++) {
+        y[i].style.visibility="visible";
+      }
+      document.getElementById("ld-page").style.visibility="visible";
+    break;
+    case 2:
+    var y = document.getElementsByClassName("nav-li");
+      for (i = 0; i < y.length; i++) {
+        y[i].style.visibility="visible";
+      }
+      document.getElementById("ld-page").style.visibility="hidden";
+    break;
+    case 3:
+      document.getElementById("ld-page").style.visibility="hidden";
+      var y = document.getElementsByClassName("nav-li");
+        for (i = 0; i < y.length; i++) {
+          y[i].style.visibility="hidden";
+        }
+    break;
+    case 4:
+    var y = document.getElementsByClassName("nav-li");
+      for (i = 0; i < y.length; i++) {
+        y[i].style.visibility="visible";
+      }
+      document.getElementById("ld-page").style.visibility="visible";
     break;
   }
 }

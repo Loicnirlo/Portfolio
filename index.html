@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="page1.css">
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="rea.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap" rel="stylesheet">
   </head>
@@ -21,19 +22,19 @@
       <h1 class="select down_button" id="down">Down</h1>
 
       <div class="nav_bar color" id="color-nav">
-        <h1 class="select visible" id="ld-page">Loïc Nirlo.</h1>
+        <h1 class="select " id="ld-page"></h1>
         <ul class="nav-links">
-          <li id="acceuil">Accueil</li>
-          <li id="cv">CV</li>
-          <li id="rea">Réalisations</li>
-          <li id="contact">Contact</li>
+          <li class="nav-li" id="acceuil">Accueil</li>
+          <li class="nav-li" id="cv">CV</li>
+          <li class="nav-li" id="rea">Réalisations</li>
+          <li class="nav-li" id="contact">Contact</li>
         </ul>
       </div>
 
         <div class="box-comp border hidden-card1" id="card_one">
           <h1><span>|</span> Compétences <span>|</span></h1>
           <h3>Programmation :</h2>
-          <p>> C89</p>
+          <p>> C89 | Java</p>
           <h3>Web :</h2>
           <p>> HTML | CSS | Javascript</p>
           <h3>Base de données :</h2>
@@ -58,13 +59,90 @@
             </div>
           </div>
         </div>
+        <div class="nom hidden-card4" id="lolo">
+
+        </div>
+        <div class="pdp hidden-card4" id="pdp">
+          <img src="images/PicsArt_12-30-11.57.59 (1).jpg" alt="pdp">
+        </div>
+        <div class="pfort border hidden-card4" id="card_four">
+          <h1><span>|</span> Points forts <span>|</span></h1>
+          <div class="pf">
+            <ul>
+              <li>Rigueur</li>
+              <li>Motivation</li>
+              <li>Passion</li>
+              <li>Adaptabilité</li>
+              <li>Curiosité</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cont border hidden-card3" id="card_three">
+          <h1><span>|</span> Contact <span>|</span></h1>
+          <div class="ct">
+            <ul>
+              <li>Tel : +336 58 06 79 12</li>
+              <li>Mail : loicnirlo46@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="grid">
+          <div class="b1 mini-box hidden-grid">
+          </div>
+          <div class="b15 bb mini-box hidden-grid">
+
+          </div>
+          <div class="b2 mini-box hidden-grid">
+
+          </div>
+          <div class="b3 mini-box hidden-grid">
+
+          </div>
+          <div class="b4  mini-box hidden-grid">
+
+          </div>
+          <div class="b5 mini-box hidden-grid">
+
+          </div>
+          <div class="b6 mini-box hidden-grid">
+
+          </div>
+          <div class="b7 mini-box hidden-grid">
+
+          </div>
+          <div class="b8 mini-box hidden-grid">
+
+          </div>
+          <div class="b9 mini-box hidden-grid">
+
+          </div>
+          <div class="b10 mini-box hidden-grid">
+
+          </div>
+          <div class="b11 mini-box hidden-grid">
+
+          </div>
+          <div class="b12 mini-box hidden-grid">
+
+          </div>
+          <div class="b13 mini-box hidden-grid">
+
+          </div>
+          <div class="b14 mini-box hidden-grid">
+
+          </div>
+        </div>
 
       <div class="box" id="box">
-        <div class="hr"><hr></div>
+        <div class="hr nav-li" id="hr"><hr></div>
 
 
         <div class="page page1">
           <div class="balise"><div class="ward" id="bal-page1"></div></div>
+          <h1>PORTFOLIO.</h1>
+          <p>Site conçu par Loïc Nirlo.</p>
         </div>
 
 
@@ -76,44 +154,34 @@
 
         <div class="page page3">
           <div class="balise"><div class="ward" id="bal-page3"></div></div>
-          <div class="nom">
 
-          </div>
-          <div class="pdp">
-            <img src="images/PicsArt_12-30-11.57.59 (1).jpg" alt="pdp">
-          </div>
-          <div class="pfort border hidden-card4" id="card_four">
-            <h1><span>|</span> Points forts <span>|</span></h1>
-            <div class="pf">
-              <ul>
-                <li>pf1</li>
-                <li>pf2</li>
-                <li>pf3</li>
-                <li>pf1</li>
-                <li>pf2</li>
-                <li>pf3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="cont border hidden-card3" id="card_three">
-            <h1><span>|</span> Contact <span>|</span></h1>
-            <div class="ct">
-              <ul>
-                <li>Tel : +336 58 06 79 12</li>
-                <li>Mail : loicnirlo46@gmail.com</li>
-              </ul>
-            </div>
-          </div>
+
         </div>
 
 
         <div class="page page4">
           <div class="balise"><div class="ward" id="bal-page4"></div></div>
+
+
+
         </div>
+
 
 
         <div class="page page5">
           <div class="balise"><div class="ward" id="bal-page5"></div></div>
+          <div class="containeer">
+		<div class="contact-box">
+			<div class="right">
+				<h2>Formulaire</h2>
+				<input type="text" class="field" placeholder="Nom">
+				<input type="text" class="field" placeholder="Email">
+				<input type="text" class="field" placeholder="Téléphone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Envoyer</button>
+			</div>
+		</div>
+	</div>
         </div>
       </div>
     </section>
@@ -122,41 +190,3 @@
     <script src="function.js"></script>
   </body>
 </html>
-
-<!--
-<body class="bg-active-page1">
-  <section class="container" >
-    <div class="box" id="box">
-      <div class="nav_bar">
-        <h1>Loïc Nirlo.</h1>
-        <ul>
-          <li>Accueil</li>
-          <li>CV</li>
-          <li>Réalisations</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="page page1">
-        <div class="balise"><div class="ward" id="page1"></div></div>
-        <h1 id="d1">Down</h1>
-      </div>
-      <div class="page page2">
-        <div class="balise"><div class="ward" id="page2"></div></div>
-        <h1 id="u1">Up</h1>
-        <h1 id="d2">Down</h1>
-      </div>
-      <div class="page page3">
-        <div class="balise"><div class="ward" id="page3"></div></div>
-        <h1 id="u2">Up</h1>
-        <h1 id="d3">Down</h1>
-      </div>
-      <div class="page page4">
-        <div class="balise"><div class="ward" id="page4"></div></div>
-        <h1 id="u3">Up</h1>
-      </div>
-    </div>
-  </section>
-
-  <script src="app.js"></script>
-</body>
--->

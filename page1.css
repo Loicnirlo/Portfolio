@@ -33,9 +33,3 @@
   opacity: 1;
   transition: 3s;
 }
-.visible {
-  opacity: 1;
-}
-.hidden {
-  opacity: 0;
-}
