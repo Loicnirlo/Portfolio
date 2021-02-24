@@ -90,11 +90,12 @@ section {
   position: fixed;
   top: 14vh;
   left: 15vw;
-  background: url("images/logo2.png") center no-repeat;
+  background: url("images/logo2.PNG") center no-repeat;
   background-size: contain;
   box-shadow: none;
   height: 13%;
   width: 15%;
+  z-index: 5;
 }
 .nav_bar ul {
   display: flex;
