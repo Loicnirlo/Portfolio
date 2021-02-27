@@ -21,6 +21,7 @@ function init(){
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
 }
 
@@ -65,6 +66,7 @@ function down(){
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -79,6 +81,7 @@ function up(){
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }

@@ -60,7 +60,6 @@
 .box-comp {
   padding: 2% 2% 5% 2%;
   width: 25%;
-  height: 40%;
   position: absolute;
   left: 7vw;
   top: 19vh;
@@ -68,9 +67,11 @@
 .box-comp h1 {
   text-align: center;
   margin-bottom: 8%;
+  word-wrap: break-word;
 }
 .box-comp p {
   margin-bottom: 8%;
+  word-wrap: break-word;
 }
 /************************/
 .form {

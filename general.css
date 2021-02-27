@@ -80,13 +80,14 @@ section {
 }
 /************/
 .nav_bar {
-  display: flex;
   padding-bottom: 8%;
-  box-shadow: 0 5px 15px rgba(0,0,0,.8);
-  font-size: 20px;
   font-family: sans-serif;
+  position: absolute;
+  top: 19%;
+  right: 17%;
+  width: 40%;
 }
-.div {
+.lg {
   position: fixed;
   top: 14vh;
   left: 15vw;
@@ -99,14 +100,13 @@ section {
 }
 .nav_bar ul {
   display: flex;
-  position: fixed;
-  right: 15vw;
-  top: 17vh;
 }
 .nav_bar li {
   list-style: none;
-  margin: 5px 15px;
-  padding: 1rem;
+  width: 100%;
+  font-size: 130%;
+  text-align: center;
+  margin: 1%;
 }
 .hr {
   display: flex;
@@ -188,6 +188,41 @@ hr {
   height: 20px;
   width: 20px;
 }
+/****************************************************/
+.b2 {
+
+}
+.b6 {
+  background: url("images/voiture1.jpg") center;
+  background-size: cover;
+}
+.b4 {
+  background: url("images/blocus.jpg") center;
+  background-size: cover;
+}
+.b12 {
+  background: url("images/blender2.jpg") center;
+  background-size: cover;
+}
+.b14 {
+  background: url("images/Capture d’écran 2021-02-25 001002.jpg") center;
+  background-size: cover;
+}
+.mini-box h1, .mini-box p{
+  color: black;
+}
+.box-sha {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+}
+.b8 {
+  background: url("images/blender1.jpg");
+  background-size: cover;
+}
+.b10 {
+  background: url("images/Capture d’écran 2021-02-24 234727.jpg") center;
+  background-size: cover;
+}
+/*******************************************************/
 
 /**************************************************/
 .bg-active-page1{
@@ -201,12 +236,12 @@ hr {
   background-color: black;
 }
 .bg-active-page4{
-  background-color: #DEDEDE;
+  background-color: #BAB7B7;
 }
 .bg-active-page5{
   background-color: #0D5B6C;
 }
 
-.color{
+.color {
   color: white;
 }

@@ -18,6 +18,7 @@ function go_ld_page() {
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -28,6 +29,7 @@ function go_acceuil() {
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -38,6 +40,7 @@ function go_cv() {
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -48,6 +51,7 @@ function go_rea() {
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -58,6 +62,7 @@ function go_contact() {
   verifNavbar();
   setPagecv();
   setPagerea();
+  setContact();
   ButtonDebug();
   setBox();
 }
@@ -126,8 +131,6 @@ function setPagerea(){
 }
 
 /***************************************************************/
-/* Gere affichage éléments de la page contact*/
-
 
 
 /***************************************************************/
@@ -166,6 +169,16 @@ function setPagecv(){
 }
 
 /***************************************************************/
+
+function setContact(){
+  if (x == 4){
+      document.getElementById("containeer").style.visibility="visible";
+  }else{
+      document.getElementById("containeer").style.visibility="hidden";
+  }
+}
+
+/***************************************************************/
 /* Gerer affichage éléments navbar */
 
 function verifNavbar(){
@@ -195,7 +208,7 @@ function verifNavbar(){
       document.getElementById("ld-page").style.visibility="hidden";
       var y = document.getElementsByClassName("nav-li");
         for (i = 0; i < y.length; i++) {
-          y[i].style.visibility="hidden";
+          y[i].style.visibility="visible";
         }
     break;
     case 4:
